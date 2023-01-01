@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Steel_industry_data' inline='true' name='federated.18swztq1wthi4v1azefm011ci2on' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Steel_industry_data' name='textscan.0qnaxjm0jmmth212cpu7p1z0sb2f'>
+            <connection class='textscan' directory='C:/Users/roija/Documents/GitHub/Windows-Misc/Steel Industry' filename='Steel_industry_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0qnaxjm0jmmth212cpu7p1z0sb2f' name='Steel_industry_data.csv' table='[Steel_industry_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='date' ordinal='0' />
+            <column datatype='real' name='Usage_kWh' ordinal='1' />
+            <column datatype='real' name='Lagging_Current_Reactive.Power_kVarh' ordinal='2' />
+            <column datatype='real' name='Leading_Current_Reactive_Power_kVarh' ordinal='3' />
+            <column datatype='real' name='CO2(tCO2)' ordinal='4' />
+            <column datatype='real' name='Lagging_Current_Power_Factor' ordinal='5' />
+            <column datatype='real' name='Leading_Current_Power_Factor' ordinal='6' />
+            <column datatype='integer' name='NSM' ordinal='7' />
+            <column datatype='string' name='WeekStatus' ordinal='8' />
+            <column datatype='string' name='Day_of_week' ordinal='9' />
+            <column datatype='string' name='Load_Type' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0qnaxjm0jmmth212cpu7p1z0sb2f' name='Steel_industry_data.csv' table='[Steel_industry_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='date' ordinal='0' />
+            <column datatype='real' name='Usage_kWh' ordinal='1' />
+            <column datatype='real' name='Lagging_Current_Reactive.Power_kVarh' ordinal='2' />
+            <column datatype='real' name='Leading_Current_Reactive_Power_kVarh' ordinal='3' />
+            <column datatype='real' name='CO2(tCO2)' ordinal='4' />
+            <column datatype='real' name='Lagging_Current_Power_Factor' ordinal='5' />
+            <column datatype='real' name='Leading_Current_Power_Factor' ordinal='6' />
+            <column datatype='integer' name='NSM' ordinal='7' />
+            <column datatype='string' name='WeekStatus' ordinal='8' />
+            <column datatype='string' name='Day_of_week' ordinal='9' />
+            <column datatype='string' name='Load_Type' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Usage_kWh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Usage_kWh]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>Usage_kWh</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lagging_Current_Reactive.Power_kVarh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lagging_Current_Reactive.Power_kVarh]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>Lagging_Current_Reactive.Power_kVarh</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leading_Current_Reactive_Power_kVarh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Leading_Current_Reactive_Power_kVarh]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>Leading_Current_Reactive_Power_kVarh</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2(tCO2)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2(tCO2)]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>CO2(tCO2)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lagging_Current_Power_Factor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lagging_Current_Power_Factor]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>Lagging_Current_Power_Factor</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leading_Current_Power_Factor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Leading_Current_Power_Factor]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>Leading_Current_Power_Factor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NSM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NSM]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>NSM</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WeekStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WeekStatus]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>WeekStatus</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day_of_week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day_of_week]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>Day_of_week</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Load_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Load_Type]</local-name>
+            <parent-name>[Steel_industry_data.csv]</parent-name>
+            <remote-alias>Load_Type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='log' datatype='real' name='[Calculation_175077481038909440]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&apos;&#13;&#10;return (_arg1).apply(lambda x,n=15: np.power(x, (1/n)))&#13;&#10;&apos;, sum([Leading_Current_Reactive_Power_kVarh]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Day of week' datatype='string' name='[Day_of_week]' role='dimension' type='nominal' />
+      <column caption='Lagging Current Power Factor' datatype='real' name='[Lagging_Current_Power_Factor]' role='measure' type='quantitative' />
+      <column caption='Lagging Current Reactive.Power kVarh' datatype='real' name='[Lagging_Current_Reactive.Power_kVarh]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Leading Current Power Factor (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Leading_Current_Power_Factor]' peg='0' size='2.3' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Leading Current Reactive Power kVarh (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Leading_Current_Reactive_Power_kVarh]' peg='0' size='0.91' />
+      </column>
+      <column caption='Leading Current Power Factor' datatype='real' name='[Leading_Current_Power_Factor]' role='measure' type='quantitative' />
+      <column caption='Leading Current Reactive Power kVarh' datatype='real' name='[Leading_Current_Reactive_Power_kVarh]' role='measure' type='quantitative' />
+      <column caption='Load Type' datatype='string' name='[Load_Type]' role='dimension' type='nominal' />
+      <column caption='Usage kWh' datatype='real' name='[Usage_kWh]' role='measure' type='quantitative' />
+      <column caption='Week Status' datatype='string' name='[WeekStatus]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Steel_industry_data.csv' datatype='table' name='[__tableau_internal_object_id__].[Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Steel_industry_data.csv' id='Steel_industry_data.csv_D3725BC9935E4C4AA535B13D60A0DFAF'>
+            <properties context=''>
+              <relation connection='textscan.0qnaxjm0jmmth212cpu7p1z0sb2f' name='Steel_industry_data.csv' table='[Steel_industry_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='date' ordinal='0' />
+                  <column datatype='real' name='Usage_kWh' ordinal='1' />
+                  <column datatype='real' name='Lagging_Current_Reactive.Power_kVarh' ordinal='2' />
+                  <column datatype='real' name='Leading_Current_Reactive_Power_kVarh' ordinal='3' />
+                  <column datatype='real' name='CO2(tCO2)' ordinal='4' />
+                  <column datatype='real' name='Lagging_Current_Power_Factor' ordinal='5' />
+                  <column datatype='real' name='Leading_Current_Power_Factor' ordinal='6' />
+                  <column datatype='integer' name='NSM' ordinal='7' />
+                  <column datatype='string' name='WeekStatus' ordinal='8' />
+                  <column datatype='string' name='Day_of_week' ordinal='9' />
+                  <column datatype='string' name='Load_Type' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Steel_industry_data' name='federated.18swztq1wthi4v1azefm011ci2on' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18swztq1wthi4v1azefm011ci2on'>
+            <column aggregation='None' datatype='integer' name='[Leading Current Reactive Power kVarh (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[Leading_Current_Reactive_Power_kVarh]' peg='0' size='0.91' />
+            </column>
+            <column caption='Leading Current Reactive Power kVarh' datatype='real' name='[Leading_Current_Reactive_Power_kVarh]' role='measure' type='quantitative' />
+            <column-instance column='[Leading_Current_Reactive_Power_kVarh]' derivation='Count' name='[cnt:Leading_Current_Reactive_Power_kVarh:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Leading Current Reactive Power kVarh (bin)]' derivation='None' name='[none:Leading Current Reactive Power kVarh (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.18swztq1wthi4v1azefm011ci2on].[none:Leading Current Reactive Power kVarh (bin):qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.18swztq1wthi4v1azefm011ci2on].[none:Leading Current Reactive Power kVarh (bin):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.18swztq1wthi4v1azefm011ci2on].[cnt:Leading_Current_Reactive_Power_kVarh:qk]</rows>
+        <cols>[federated.18swztq1wthi4v1azefm011ci2on].[none:Leading Current Reactive Power kVarh (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.18swztq1wthi4v1azefm011ci2on].[Leading Current Reactive Power kVarh (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{439256BC-1CDD-44D3-849F-DF4BA838CFF6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='360'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='72'>
+            <card type='columns' />
+          </strip>
+          <strip size='72'>
+            <card type='rows' />
+          </strip>
+          <strip size='69'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.18swztq1wthi4v1azefm011ci2on].[none:Leading Current Reactive Power kVarh (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{92D0F092-A282-4803-A5AC-170A12CF1C51}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAek0lEQVR4nO3dd3Bd153Y8e+9r+Gh9w4SIEB0gATBYlONVlvJsixr11W7G292dyY7Kc5O
+      /spkJhn/sfknmazXie1N7JmVxvG6SJHVKVmiCklRokRUgkSvBED09nq5JX+AFEkJ9z4QfAUg
+      zmeGMwRxcO7vge/3zr3n/O65kq7rOoKwS8mJDkAQEikhCaBpWlyPFatBTlXVmPSraVrMfkex
+      ilnX9R0Z87ZJAK/XG5Nj6boeswSI5dnjTot5J/6eE5YAgrBdiAQQdjWRAMKuJhJA2NVEAgi7
+      2pYTQNd1XMtz+ELrV/8hv5vl1fWZHJ9rmd6BETRdR1OC9PdexhtUoha0IETLlhMg4F5mpK+b
+      ea+GFg4yNjnMlfF5dDVI1+UR9ham0nlpiIudHZRU7KOrox2zySxJkrYaiiBsmXWrP+hMz6Fy
+      TzErgMWeRE11FT3dS6gBL0kZ2aSk56IFptEkK2lOJ06rBUXXkVQVTdNQlFtHBFVVv/Bv0XB9
+      zUGWo3+2F8uFMIjN/HcsF5VitRYQy5i3nABGLHY7aiiIrilIFiuSpqLqOho6VklCslpRFAWr
+      9dZDWyyWL/xbNKiqiiRJMUkAICYxX1+9tlgsUe8bRMzXaZq29QRwLc8xNL1CyHqZtMpSpq+M
+      sboWYs6VTUGahY7OHqrqmpH9i3R1dpBbXI7ZSY6oyRMSQUpENehGI4DX6yUlJSXqx4rlCLDR
+      64iGWH6aiphv0DRNTIMKu5tIAGFXEwkg7GoiAYRdTSSAsKttmwQQK8FCImybBBCERBAJIOxq
+      2yYBxEqwkAhbXl4L+d30dHxKcfMJCpJCdHVfQlElmloPMdl/EZc/RMm+Oiy+ea4srJKSnkdd
+      1Z5oxi4Id2zLI4BsdVBRmk9IgaWrk2SVVdO4P5/hgVFcmpPW1hamxke4MrvMoZZDeFfmiN9m
+      KIKwOaYjwPLMOOc7LoMksbemmYbK0hs/aLNjlddnbhRFxWqzYnU4UHwrSCmpIMmgayCBJIEs
+      Ses3yIhy6IhEOfStElYOfebtN0ire4DK/FTSsjJv+V7Q72VpZY210CKV2dn0jY3iwkdxdSMT
+      fZeYHFdJzshF9i1wZWqaMFaskgSiHDqinVpavBNjNuz19Fu/Z/TqPL6F97mSk0pd633kNFd9
+      9n1d13DkVpAvadhT86mvshPWbWRlpJDd0sSyy09Zbg7oxSwsLNFysDnqL0AQ7pRhOXQoGKDv
+      UhcF5fVkJNuwWG3YbdHJQlEObW6nlhbvxJgN3xV2RxK2kIuXT55iYXERrz8Y9QBuJlaChUQw
+      /VhMysijJNNGd1cXU/PL8YpJEOLGdFwJuBb48KPzOOUwakY5TVVl8YpLEOLCNAF6+4f40r0n
+      2J8ncXp8IaaBiJVgIREME0DXdR56/Ov4dQvn3nuPx048Ec+4BCEuDBOgr/0M733aS1VtE48+
+      9U0yUpLiGZcgxIXhNKiu6yjhECN93bz+yksUH/sGz/zRsagcVEyDmtupU4o7MWbDXq+OXubt
+      Dz7CF1SpbH2Qe481RD0AQUg0wwRIycynrr6JugOtWIPL9F6ZJi+zxqC1zsLMNJo9lYKcTII+
+      F1cX3OzdUwJamMkrU+SX7MFpj80yuSBsleF5QUZ2HrWVxfzq5z/mJ8/+noqKcsNOFqdGWfRL
+      LE/0MbPiprO7jzSHysW+US53deDMyKCzo9N0c1xBSATDEeDUq79l+OoqPp+PsNVK39A49x3a
+      eATQdQ1FCZObk8H08Cj2jFxyC0oYm+omjEx+djZT1lHTzXE3+rdoENWgtxLVoDeYVoM+8tT3
+      eGSTHeWVVmFZnGdlYYn03AJcLg+6piJJFiRdXS+DRsciSciiGjSinVpZuRNjNn1XDPX34PKH
+      I3YUDvqYnpnBrSZTWV5CdpJKe2c35furqSgtoLOzg8y80u1z/6UgXGO6OW7v+Xc4N+bnayeO
+      kJKWSXqqMyoHFdOg5nbqlOJOjNn0XWFPzSLHofDxxx8zNh3bUghBSATTBLDoIYb7L6PpGqOz
+      q/GKSRDixjQBujo6OfHww+hKkOm5xXjFJAhxY5oAjzz5NMN9l1nxSTzz1XviFZMgxI1pAkyM
+      DOFTZDLSknF7PPGKSRDixjQBsvOKyM1MJehZYmxanAIJdx/TBFhenCWoyWRk5ZGflRbTQMQ9
+      wUIimE6u2m12fO41loJh8st98YpJEOLGdATIKyolxWEjt2gvB+v3xSsmQYgb0wQ4987r5NXf
+      w8EChV++/qFhOyXopauzg/b2DjxBhdH+S7S1XWBhzcfSzBXaO9oZGr9qGoi4J1hIBNMEKCkt
+      puvj03zwaS8VpUWG7TzLcziySthXkMLk1FWWAhZaWw4wPjzE2NQsLS2HWFuYFpvjCtuO4TWA
+      poYIkEx1VQWtLU9TkJtl2IkjJZ2V8WFcqOwpr8AftCPJFtBVdElCvvZHFZvjboooh75VQsqh
+      O069yECgCHnyPJNVzRTmGXfkWl4kI7+UbKubZXeY8NoSi3M2HKlZyP5F5peXCWkSVklCEuXQ
+      Ee3U0uKdGLPhu2JxZRm/exV/KMi7f3iLvjHjc/iCvTXkJ0PYlkN99V4OHqjFHbTQWFNBffNB
+      /GtrHDh4EDHRKWw3huXQ7tVF5hZvFMBl5OSTl5UelYOKcmhzO7W0eCfGbNhrWmYuaZm5UT+o
+      IGwnpmk1P97L7156g8raBpwF1XzlUJVZ8zsiVoKFRDA9Lzj7/rvc9+BDaEqAi/2j8YpJEOLG
+      NAG+8uhjfPTB+/QMTPH0I1+OV0yCEDemp0ATY2PkllXz2JHDFGdH/wL1ZmIlWEgE0xHg4D2P
+      8KWmcn7zv/8bv37rk3jFJAhxYzoCdH98iq6RRR7/3t9Qt18Uwwl3H8MR4PSZM8gWK+GAh/aP
+      z9DRNxbPuAQhLgxHgCOHD+PzrPFM83GsWoCVgHEnoYCXxeU1QCIzOwebpLDs8pOfmwO6wsLC
+      Epk5editYmssYXsxfEeGvGs894uf8eGFbtrPnOSFUxcMO5EkGavVytLkIHMuHx0dFwl6lrg0
+      NEHfxS784TAdnd0xeQGCcCcMRwC/14VktbO6NI+cVsi/+Pq9hp3YHE7y8xyMjTmpS9VYzsij
+      rLycufZuQKeutISl2VkUXQdRDRqRqAa9VUKqQYvKa7jvyCFyG+4nNzTBh50DfPV4o2FnC1cG
+      yCmrRrbI6IoCuoYkyUi6iq6Dhr5eFm1QDWq1WkU16DU7tbJyJ8Zs2qtreZaJ7h6KgsMsWGpN
+      WuoseDRq6jOQJUi3jNHe3klpZT2yb56Ozg5SswrF5rjCtmO6Oa4a8vPR2dP4Lek8cO8xHNbo
+      ZPdGI4DP5yM5OTkq/d9MVIPeSsR8Q8QRoOPMm7z45nkybApL4SS+98ihqAdxnVgJFhLBNAGm
+      Z+Y58eBD5Dp8dC2txCsmQYgb0wR49KlvE9QlOj/5hG8+KorhhLuP6YnxeG8bP/uHv2dmcZG3
+      z1+KV0yCEDemCTA6OsrRe+4l6PcSCATjFZMgxI1pAjz6je+hBXxk5lfwzYdb4xWTIMSNYQKs
+      TA/w45/+nKVwCvm2NT7qHIxnXIIQF4YJ0PbRae596i+Yu/gWU5TyxP0HYxqIuCdYSATDBEhN
+      z+TMG79l3m9jcaSLc50D8YxLEOLCcCX484VNkiQZfkrrus7owGU8IY2q2kaWJgdZWPGwr64J
+      2bfE8OQM2fllVJTmA2IlOJKduqq6E2M2fFdIkoTX7ULVADXEmtdv2JFnYRIvKZSX78OJjzmX
+      xqGWJob7+xkan+JgyyEWZyYwW+sVK8FCIhimlXtlkX/6xU85cOKPyfAOcXYunR989+EN23pc
+      a/iCVmauDDJjScHicCDJVtDWN8e1SBIWJBRdRxLl0BGJcuhbJaQcem1pDrc3yPhwP1mpyTzz
+      hPH9AJl5eUz7XBTlZzG5IhFcWcTrSsPqTEcOLOH2+wmqutgcd5N2amnxTozZsNfSqga+9tC9
+      vNsxjG/VSt/QBPcdqtmwrTO9gMpCjVmPQkN1GX53OuMzKxxoqAS1jMHBYZpbWsTmuMK2Y5pW
+      a8sL7Kltob4sm+yCAuOGkkRWfjFZ69e4JKdnU5+efe0IDmrrGyIGcn3YF4R4Mj0vqGw+Sl6S
+      ysLCAh6fyV3xURCroVMQzJgmgGfxKh+deY+rM9N82jcV00DELJCQCKYJMDQ0xJfuu59wwIfH
+      Kx6TKtx9TBPggceewruygjOzhGe+Ku4HEO4+phfBFz85Q2blUb7WXB6ncAQhvkwTIC0zmxf+
+      37P0fFRE07EHDadBBWGnMk2AsCbzr//Df6Q4K/o1OoKwHZheA9gJ8NOf/JR3Tp2if3wmXjEJ
+      QtyYjgDZxZX80QNp6w3NSgl0hf5LvQR1icrqOlTPIpNzq1TXVCOFfQyOjFG8t4qsNKdhF+J+
+      ACERTEeAgM/D0tISQ51nOd87adhO8a0ScmRyoLmJFJtC78hVqvbm03N5kEuXLlGxv4b+yz2m
+      1aCCkAimI0BScirZ2dkkhQsYca0ZttNlB5r3ChfOT1NWvhdHWgZJKRlooXE0SSbZYSfJIotq
+      0E0S1aC3Skg1qKaq2BzJ5OTkkJ2Ty/37jWeAJIuN+qYDhF1TjM76UQN+lHAQ2WpHUhXCqoaC
+      eTWoLMuiGvSanVpZuRNjNr4n+N0XGXbZaGxspNTp44V3jJ8RpilhBvsuM3LVS03NPsrykum5
+      PEh1XS01VRVc7ummeO9+UQ0qbDuGaeV0WLk8OMyXawoYHhzAZqsz7MSenEZjU/NnXxeW7aOw
+      7NoXSXkcPJgXtYAFIZoMR4DGe5+k3DbPj/7+R4yGC/jWw7HbGFcQEsV0e/RY2egawOv1kpIS
+      /WcRi5vibyViviHi9ugDHWf5sGsYtDCaZOOeBx+nvqIw6oEIQqKYfixeutjD4ROP88TxOrwk
+      8dIrr8QrLkGIC9MR4OjRVp77zbNI4QD3PfYk09NzMQtErAQLiWB6DeBzLTM6MY0O5BSWUpyX
+      FZWD3snGWKqqEgqFNnUcu90OIK4BbiJiviHiNcAfXvpnApnVlGYnk5yZH/UAtsLv9/OD//k2
+      ihb52v0nP3gkJhfWwt3DNAHystJpm50nVc4kM7i5T92tup3JqDVfeFMJIGqPhEgME8Dj8VDd
+      +gAp8+vPBstME/cECNExObOA2xf5gStZackU5WfHNBbDBOjs7qYgzcrQ0AQAelIWZQU5xj1p
+      YT6+0M2Xjx1mZmKEmSUXVXWNyIEVhiamyS3cS1lhbF+MsDO8fLafU13TEdt9+/4q/vSx6L1n
+      dF3H5/Pd8rVhAqRZVYYnV0lNTQV0HHabWdeMDvThCoTQw14ml/y0NtXQ2dOPpPppPnSYzvY2
+      SguPinogIaH+6y9PMzTj+exrwwQo3rOPT8//iurjT5LtG+LT3is0VJZs2DbgXsIrp5GVEkQN
+      BbAmObFYHehqGF0Cm0XGJpmXQyuKsqly6NspjdVU9bP2ohx63U4qh9Z1HUVRohazruuEVZ2Q
+      cmMXQsMEyC8q5XhrM6+deY9kZZV991YZduxxewj51rgyMUFxcQkhzxp+7yqWpBTk4CreYJCg
+      Zl4ObbVaNzXVdTvTbLLFgsViiXs59Oqam6HJxYg/a7fKNO4v/cJr2qmlxdGOWZKkz2KNRswb
+      Jadpr7VHT7AatuMNw/5y471Bc4vLyS2GPWUl5OXmke6wMHJlkcb6/UhhP4NDg9Q2NO2a05/p
+      hTX+7tfG5ePXFWUl8b/+tlhsC5lApgnw5vPP0bMI1VnwqSWXfSXmZc15uevfT88poDHnWsJY
+      UmhobIoYiFgJFhLB9LwgMyuXI811rHl8+P1ia0Th7mM6Ahx/9Cl6L3WTdfQBiivr4xWTIMSN
+      6Qjw/iu/4mLvADOzU/z+nfMxDUTsDi0kgmkCpGdksrK8xCefdrK3tCheMQlC3JieAh15+GnK
+      G2cIBnysacabWgnCTmU4AqiqQjiskJmTR5bFw8mzXfGMSxDiwnAEGO9t5/1Peta/0BQONt0T
+      r5gEIW4ME6Cy6RiVTcfiGYsgxJ1hArx+8iQ5qTaqWu4nL81h2omu69fqVyRkiwy6hqbpyLIF
+      WP+eLMtisUvYdgwTQFqd5P88f5Y9le2kO6203Pc4Dx3b+HGn4YCbgaEJgr41CiqbmB+5jGSz
+      kpq7B4t3lrUQKLqNoy3Gj0uNRXKoyo39Rs1qgWRZFuUIUaAoyiYfd7t9prwNE+CJZ/4VtYfv
+      IzkjD6czmcx041sL7c50igqyuXLFi031QVo+LXUVtHVcBBQOHz5MR1v7ejXotaKpz1f4qTdV
+      bpq5necJ/+K1NsbmvRHbff/RBo427tt0vzfHslHMur75GFVV/UJyxvKZyUYx3yld13n+VCfn
+      emcjts1Js2+2U9Rr1cPRiPm2i+H8CxO88s45kkNL1D74HU4cqDBsm5ySRmZ6Cm6390aCSyDd
+      VAInsf5Jf/3PzTZ7inQ7I8WyJ8TMSuTnGwfD2pZGoI1ex7XvbLqPjV739a9jMSoax3zn3P7w
+      pn7fGclm95bc5Kb3SjRi3qgP0wQYGxvn2P2PUxQc4O3hK4YJ4FmZZ2jiKroaIr+sDP/kAO3t
+      i+SXViN7Z2lr78DmzMQiSSBJn10TfN5mSpZj9abYSrm00eu4nRiNjq3rekxKuI1ijka/sSDL
+      ctRivu0R4JGnvsUrr55kVE7mmW88ZNguNSuflqwbu0aU5t88e5RN2Rd/RBC2BdMEsCVn8e1n
+      /hzQ2cQmDIKQEIqiEAhEPvXaiGECKOEQv3nuHzny2J+R7Rvg+S4f//Y7D285yLvB9buerru+
+      8e7nicK++PL7/fzlf38z4u9dkiTK82+dzDFMgNHLbbR19zLt+hVpTgdf/ePvRifaHeyNsz28
+      23klYruirKQ4RCPcLKxqRPrckaTbuAaoPnic//yfihiamEOWJWQt+s/v2mnWfOFNTas6bLG5
+      /1iIPtP/qbNvv86sK4TVakWWxSqucPcxTYC8nAxGRoYZHx9nec1j1vSOiTIJIRFMZ4EO3P81
+      yt3r9wKnZkRnZ2hB2Cy3N0BH33jEdQBZ3/oqsWkCjPd3c/7iMKszY+y959t8+6GDWz6QINyu
+      sdk13myfitiuujh1y8cwTYB99S3k7qnFM9nNW2ORN3q6E4mcOhyZXmRxLfKuFwur7qgf+82P
+      egmrn3/t+no5yU2nhQ+1VpKZkRb14+92pglwdWKY8+09aNZkvvn4E4btNCXE2MgI3rBOdU0N
+      7oVpri6ssb+uDinoYmh0kvzSCgpz0qP+AqJhYHKF/unI05u1JdF/A75wZgiXP/IM27G6EpEA
+      MWB6ERx2L7HgDuOdG2Noesmwnaoq5JeUs6/QyeDQBKNXV6iv2Utv7wB9/UPU1DcwMdy/jYpg
+      BWGd6QgwPDzC8YeepDjQzxsDY9zftHfDdjaHE6/rKpcGF2hp2sfAlI7NkYIeDqJKEg6bFbss
+      E9Z15Dhujns3UTf4nW2pnxhujrsTRSyG+/1Lr9EnJ/PMN//EsF3QvUjfxDLHjx9BUgOEvdOE
+      Ah5kuxM57CYQDhPSdWxx3hz3bmKR5ahtahurzXF3IsNToP5P36V3TuVPv/+XPHVfHec6Bww7
+      UVWwywo9F3tY9ulU7cmhf3iK+vpq6uqqGerrZV913a7ZHFfYOQw/Cpbnp1ljL7qu419bYmLG
+      +HIhOTOP1kM3bZybnkxOQen6322ZNDVnRi1gQYgmwwQ4+tBTPPdPz/I/TitIjlT+5V//VUwD
+      ESvB25Ou64TD4U2124nXAYYJYHVm8Nf/5m/jGYtg4oOOYdyBwYjtakozyUgzvn/7+qpqSpKN
+      2n0bP/HnZqqq8nfPvcvcauSH2uWmm+8esh1F/2pIiIme8WX6pyMvxI3Prm6qXWtlDv9lEwkA
+      sOQOMbsa+YaTzJRN3uu7jWybBNiJw+fOtrlTm7t92nnbJIAQX/6gwr//8cmI7ZIdd/e0s0iA
+      XUrTdaaX/RHbpSRZydqBpzabJW5dEnY1kQDCriYSQNjVonINoIYC9PV3EaKQQ0176Gr7FAXI
+      Lq7C4p1l3h1EtqXS2lwTjcMJQtREZQSw2JNobG7ApoMWcKE6c2ltPcLS7CTzLj+HWw9ByI16
+      bRv169up3/xno3/b6I+YLhWiKeqzQDrc2BtWNy5x2OiNvJk3t0gAIZqikgChgJuBgV7Gx13k
+      lR5B8szT3r5IdlElsmeGtvYOZHvqLZvjfr6sebN79MdiY1dh94pKAtiT0mg6cIymA+tfF+Yc
+      v+m7eRhvqn6D+GQXEkF8nAq7mkgAYVcTCSDsaiIBhF1NJICwq8U8AZSQj97Ll3D5QrE+lCDc
+      tpgnQE/3RfZUVnGpu9N0YyxxT7CQCLEfASSZ1KQkkqwWxCM2hO0m5gkgI6FoOiq6uPtG2HZi
+      ngDV+8q42N1JQek+042xxEqwkAgx/1BOyy7kUHZhrA8jCFsi6XH86NV1HVVV0XX9Cxe9wWAQ
+      hyPyvjKKovBe58SmnluclWJjxRO6Vp1qPP5kpdhY8UbeIeEL7XT9lj38b7e/FIeFsKoTUj63
+      r+b1/5Kb+t5yjJ93LebN9mezSDhsFjyBSFdwOpkpdlajEePn2xn8nq/LTLGx5g1H3H1cAjJS
+      bDfFqMc3AcxstGFuNFzftDUWVaQi5ht2Ysy6vo2uS2O163Msp1dFzDfsxJghzqdAgrDdbItS
+      CF3TCAaDUZ8J0nWdUChIOKxEfIr4VqiqgqJGe198HSUcIhgKR//3oakEAgG0zVxAbbZPXUdR
+      1Gt/X/9/1KIUt6apqNdOrVRFIRCl98h6zOvXNIk/BdJ1LnW1IdmSUCzJHKyvilrXqwtXubro
+      YnVhkQPH7yE1ik9w13WV7nNvoxYc4EjN5vbY3IzA2gLdQ9NkZGSwv7ICSxTPLC51tmFNTsPt
+      UznS2hSF5zWojA4MMLns5cTxIwxe6iIk2QioFo4cqL+jnkMBNwNdbaj5TTSXpdI/MISEhmpL
+      p6lmM7dYGdEYHxpgfMHNV+45ug1GAE0hoDtobGpG8a5Gteus/BJqqsqRLXJU30gAC1NjZBSW
+      Y5Wj2/Ho4DC2JDuBYCjqz1STLRYkScJijdY5tYXK2nqy0pIADXdQp7GxEcLeO+7ZnpRGU0MN
+      kiwh25JoaGwkxWHBbk+6w55lKqrryE53Xvsq0aT16SkdPer/4SHvKh9f6Kax9QhOaxQ//bUw
+      Fzp6WF2cY3xsnGhuHyvJFir211LoCDC9HHlH5tsRCCkUFRWhhQIxOSUEiMWTEHVd41LHp6jO
+      PKrLi6LXsaZsg1Mg2UqmEzra2sjIi96pBMD4YB+WJCejgwPUNDSQFKUkkGQbTzz1NGHXLElL
+      EM05in21++nobEfSoXmvPYo9g8MmMTo6BlZHdB5XpYYZGBhgemqKtIxc8jKcdHS040zPi/yz
+      EQTcKwz0DTPttVHo2MPUgosiyyxX7XZK8rO23rGmMDjQz/TUFCnpOWIWSNjdEn8KJAgJJBJA
+      2NVEAgi7mkgAYVcTCSBsiap4GRy6sqm2nec+YGZ1iTffOB2535CPD98/xcXBiS3HtjY3ycyy
+      B1hf/f749Nu89fYpFla/uD5h+eEPf/jDLR9J2LWUwDwvvnKBI4frCAfcnHz1FcL2TNKtQV5+
+      +VXcWhLFOSmcevM13vvgY/a3HsWuQcgzR1d3N4NTK1SU5HLmnZP0Do6QU7ofp03n//7jj7Dl
+      V5Jkt7C6MEdWdjad3T3ovhUmpqeYW/Ywd/UKfcOTOPHw5jsfUrSnnIGL7VzqamdNS6btzV/x
+      xrnLVOyvI8Np4Z9/82sa6/bzu5ff4nhrA2+ffA2X5iQ7WYwAQhS8//JvSSmr5dRrv8fl9WOz
+      O3j1hef55P1XWZQLKCvIAvycPdvGYPcFvJZM2k+/S1/7ewy7bLgne1jwAfhYDWXz2Il7ONxc
+      T3vbBcKqwtkPP2L88gXebR8hP83Cr3/9O/KLS3j+hZep3pPBSydPc+70++TvKeOdk+9QWlpK
+      bXMreRnrq71rC1f58KNPKCyt4MJ7rxJO38O7r79MIOAXCSBsnaaqhEJhvB43E+Pj7Kkop+39
+      UxTWtZCTasfl8lG6dy9O+00P2bM6qK9vICfVidvro6hsLylJ17+fBKFZphbXWF5ZASWEy7WG
+      xx8CrDzy+ONkpibR0HoPdRVFrCzMML0SZG9xLvb0XJoba3BKkJWdhTM1nSTb+hJlQUU9daVZ
+      lOwtx+dxMzkxTtmeCi61nxMJIGyNbE0Bzxj/8PNf8sDXv0NwdgSfYuXgl45x/p0/UFHfxPFH
+      nqTv/RcJOPPIdKZx4EAtZfuqSXdaaTjQTOPR+5npOMX5nnHWS/4t/MVffZ83fvssZ9r7OX6k
+      iRdefI3ahgaKKqrJSbZhsadQu78CSZL43ne/RV/PZZLT06mvrwesNB+op7z5y8xffJfhmTUk
+      WeZQyyEe+9b3YWGIgw89TZJvBncYahpaxEqwkDiu2WF+9uzz2DPL+Hd/8+fYErA1lEgAYVf7
+      /3iiJv3LssTSAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
