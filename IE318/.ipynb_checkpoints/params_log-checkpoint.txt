@@ -1,0 +1,16 @@
+logs of params
+
+1st Params == RMSE == 711.89
+Best params: {'gamma': 0.001, 
+              'learning_rate': 0.05, 
+              'max_depth': 12, 
+              'n_estimators': 100, 
+              'random_state': 42}
+
+2nd Params == RMSE == 711.89
+Best params: {'gamma': 0.001, 
+              'learning_rate': 0.05, 
+              'max_depth': 12, 
+              'n_estimators': 100, 
+              'random_state': 42}
+              
